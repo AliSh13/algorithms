@@ -1,7 +1,6 @@
-from random import randint
 
-numbers = [x for x in range(1,100000)]
-print(numbers)
+#numbers = [x for x in range(1,100000)]
+#print(numbers)
 
 def binary_search(arr, item):
     # бинарный поиск
@@ -18,4 +17,4 @@ def binary_search(arr, item):
             high = mid
     return None
 
-print(binary_search(numbers, 5))
+#print(binary_search(numbers, 5))
