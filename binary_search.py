@@ -1,7 +1,7 @@
+from decorators import find_time_for_execute as ft
 
-#numbers = [x for x in range(1,100000)]
-#print(numbers)
 
+@ft
 def binary_search(arr, item):
     # бинарный поиск
     low = 0
@@ -17,4 +17,8 @@ def binary_search(arr, item):
             high = mid
     return None
 
-#print(binary_search(numbers, 5))
+if __name__ == '__main__':
+
+    numbers = [x for x in range(1000,10000)]
+    print(numbers)
+    print(binary_search(numbers, 4302))
