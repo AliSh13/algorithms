@@ -17,6 +17,6 @@ def quick_sort(array):
 
 if __name__ == '__main__':
 
-    numbers = [randint(1,11) for i in range(100000)]
+    numbers = [randint(1,11) for i in range(500000)]
     print(numbers)
     print(quick_sort(numbers))
