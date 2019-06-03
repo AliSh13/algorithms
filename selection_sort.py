@@ -1,7 +1,6 @@
-#from random import randint
-#from decorators import find_time_for_execute as ft
+from random import randint
+from decorators import find_time_for_execute as ft
 
-#numbers = [randint(1,100) for i in range(1,10000)]
 
 def find_small(array):
     #находит минимальный элемент
@@ -13,7 +12,7 @@ def find_small(array):
             small_index = i
     return small_index
 
-#@ft
+@ft
 def selection_sort(array):
     #сортировка выбором
     new_arr = []
@@ -22,5 +21,8 @@ def selection_sort(array):
         new_arr.append(array.pop(small))
     return new_arr
 
-#print(numbers)
-#print(selection_sort(numbers))
+if __name__ == '__main__':
+
+    numbers = [randint(1,100) for i in range(1,10000)]
+    print(numbers)
+    print(selection_sort(numbers))
