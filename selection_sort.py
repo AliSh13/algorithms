@@ -25,4 +25,5 @@ if __name__ == '__main__':
 
     numbers = [randint(1,100) for i in range(1,10000)]
     print(numbers)
+    print(f'Количество сортируемых улементов - {len(numbers)}')
     print(selection_sort(numbers))

@@ -19,4 +19,5 @@ if __name__ == '__main__':
 
     numbers = [randint(1,11) for i in range(500000)]
     print(numbers)
+    print(f'Количество сортируемых элементов - {len(numbers)}')
     print(quick_sort(numbers))

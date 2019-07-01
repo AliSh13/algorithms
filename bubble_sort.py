@@ -16,6 +16,7 @@ def bubble_sort(list):
 
 if __name__ == '__main__':
 
-    numbers = [randint(1,20) for _ in range(1000)]
+    numbers = [randint(1,20) for _ in range(10000)]
     print(numbers)
+    print(f'Количество сортируемых элементов - {len(numbers)}')
     print(bubble_sort(numbers))

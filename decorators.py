@@ -17,6 +17,7 @@ def find_time_for_execute(func):
             finally:
                  is_evaluating = False
             end = datetime.now()
+
             print(f'Время выполнения функции {func.__name__} составило : {end - start} c')
             return my_func
     return wrapper

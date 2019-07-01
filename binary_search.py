@@ -21,4 +21,5 @@ if __name__ == '__main__':
 
     numbers = [x for x in range(1000,10000)]
     print(numbers)
+    print(f'Количество сортируемых элементов - {len(numbers)}')
     print(binary_search(numbers, 4302))

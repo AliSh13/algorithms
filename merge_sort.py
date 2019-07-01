@@ -34,4 +34,5 @@ if __name__ == '__main__':
     numbers = [randint(1,11) for _ in range(500000)]
 
     print(numbers)
+    print(f'Количество сортируемых элементов - {len(numbers)}')
     print(merge_sort(numbers))
